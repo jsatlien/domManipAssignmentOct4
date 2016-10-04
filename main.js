@@ -1,6 +1,7 @@
 var answerBox = document.getElementById("answer");
 
-var calculate = function () {
+var calculate = function (event) {
+  event.preventDefault ();
   answerBox.innerHTML = ""
   var val1 = Number(document.getElementById("value-one").value);
   var val2 = Number(document.getElementById("value-two").value);
