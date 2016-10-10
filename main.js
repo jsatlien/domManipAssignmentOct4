@@ -2,10 +2,9 @@
 
 var calculate = function (event) {
   event.preventDefault ();
-  // answerBox.innerHTML = ""
   var val1 = Number(document.getElementById("value-one").value);
   var val2 = Number(document.getElementById("value-two").value);
-  answerBox.innerHTML += val1 + val2;
+  answerBox.innerHTML = val1 + val2;
 };
 
 var calcButton = document.getElementById("calculate-button");
